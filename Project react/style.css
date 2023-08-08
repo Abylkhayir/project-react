@@ -37,10 +37,14 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 /* Обнуляем отступы и отступы между элементами */
-
+body{
+	height: 100%;
+}
 
 .wrapper {
 	min-height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 .header {
 }
@@ -229,3 +233,43 @@ font-weight: 500;
  .header__catalogitem:last-child {
 	margin: 0px 196px 0px 0px;
  }
+
+/*main*/
+
+.main {
+	flex: 1 1 auto;
+}
+
+/*Footer*/
+
+.footer {
+	background: #141414;
+
+}
+.footer__container {
+	max-width: 1590px;
+	margin: 0 auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.footer__info {	
+}
+.footer__title {
+	color: #FFF;
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin: 102px 0px 0px 0px;
+}
+.footer__item {
+	color: rgba(255, 255, 255, 0.80);
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 27px; /* 150% */
+margin: 20px 0px;
+}
